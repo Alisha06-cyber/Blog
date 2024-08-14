@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    name: 01_plans_api
+    url: jdbc:mysql://localhost:3306/01_plans_api
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+plan-api:
+  messages:
+    planSaveSucc: "Plan saved successfully"
+    planSaveFail: "Failed to save the plan"
+    planUpdateSucc: "Plan updated successfully"
+    planUpdateFail: "Failed to update the plan"
+    planDeleteSucc: "Plan deleted successfully"
+    planDeleteFail: "Failed to delete the plan"
+    planStatusChange: "Plan status changed successfully"
+    planStatusChangeFail: "Failed to change plan status"
